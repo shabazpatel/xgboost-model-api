@@ -18,12 +18,12 @@ output from curl request,
 
 Load testing the API is performed using [Apache Bench tool](http://httpd.apache.org/docs/2.2/programs/ab.html)
 ```
-Shabazs-MacBook-Pro:~ Shabaz$ ab -p data.json -T application/json -c 10 -n 1000 http://ec2-13-56-114-234.us-west-1.compute.amazonaws.com:5000/predict 
+Shabazs-MacBook-Pro:~ Shabaz$ ab -p data.json -T application/json -c 10 -n 1000 http://ec2-xx-xx-xx-xx.us-west-1.compute.amazonaws.com:5000/predict 
 This is ApacheBench, Version 2.3 <$Revision: 1663405 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking ec2-13-56-114-234.us-west-1.compute.amazonaws.com (be patient)
+Benchmarking ec2-xx-xx-xx-xx.us-west-1.compute.amazonaws.com (be patient)
 Completed 100 requests
 Completed 200 requests
 Completed 300 requests
@@ -38,7 +38,7 @@ Finished 1000 requests
 
 
 Server Software:        Werkzeug/0.12.2
-Server Hostname:        ec2-13-56-114-234.us-west-1.compute.amazonaws.com
+Server Hostname:        ec2-xx-xx-xx-xx.us-west-1.compute.amazonaws.com
 Server Port:            5000
 
 Document Path:          /predict
