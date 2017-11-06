@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 from celery import Celery
 from kombu import Exchange, Queue
-#redis_host = 'redis://production-cache.haoefi.0001.usw1.cache.amazonaws.com:6379'
-redis_host = 'redis://ip-172-31-15-245.us-west-1.compute.internal:6379'
+redis_host = 'redis://production-cache.haoefi.0001.usw1.cache.amazonaws.com:6379'
+#redis_host = 'redis://ip-172-31-15-245.us-west-1.compute.internal:6379'
 
 celery_app = Celery('indexer', broker=redis_host,
                     backend=redis_host,

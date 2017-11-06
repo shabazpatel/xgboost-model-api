@@ -1,0 +1,6 @@
+version: '2'
+services:
+  xgboost-model-api:
+    image: 373706122488.dkr.ecr.us-west-1.amazonaws.com/xgboost-model-api:master 
+    cpu_shares: 100
+    mem_limit: 524288000
